@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/highscore_layout"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/bgdialog">
+
+        <TextView
+            android:id="@+id/gameoverHs"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/game_over"
+            android:textColor="#D6000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:text="@string/newhscore"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myhighscore"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="0"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="match_parent"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:hint="@string/enter_your_name"
+                android:id="@+id/username"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:id="@+id/return_to_menu"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:textSize="30sp"
+                android:text="@string/back"
+                android:background="#00000000"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:id="@+id/return_to_game"
+                android:textSize="30sp"
+                android:text="@string/save"
+                android:background="#00000000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
